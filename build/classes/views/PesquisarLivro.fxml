@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PesquisarLivroController">
+   <children>
+      <TableView fx:id="tabelaLivro" layoutX="26.0" layoutY="72.0" prefHeight="278.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="colIdLivro" prefWidth="97.0" text="idLivro" />
+          <TableColumn fx:id="colTítulo" prefWidth="141.0" text="Título" />
+            <TableColumn fx:id="colEditora" minWidth="0.0" prefWidth="107.0" text="Editora" />
+            <TableColumn fx:id="colDtPublic" prefWidth="123.0" text="Data de Publicação" />
+            <TableColumn fx:id="colAutor" minWidth="9.0" prefWidth="111.0" text="Autor" />
+        </columns>
+      </TableView>
+      <Pane layoutY="-3.0" prefHeight="34.0" prefWidth="632.0" style="-fx-background-color: #4169E1;">
+         <children>
+            <Label layoutX="243.0" layoutY="7.0" text="PESQUISAR LIVRO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnExcluir" layoutX="160.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="34.0" prefWidth="91.0" text="Excluir" />
+      <Button fx:id="btnVoltar" layoutX="492.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnVoltar_Click" prefHeight="34.0" prefWidth="91.0" text="Voltar" />
+      <Button fx:id="btnPesquisar" layoutX="36.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="34.0" prefWidth="91.0" text="Pesquisar" />
+      <Button fx:id="btnAlterar" layoutX="271.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnAlterar_Click" prefHeight="34.0" prefWidth="91.0" text="Alterar" />
+   </children>
+</AnchorPane>
